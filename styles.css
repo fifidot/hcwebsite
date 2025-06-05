@@ -97,6 +97,7 @@ footer {
 }
 .title-highlight{    font-weight: 700;}
 .list-gap{margin-left: 5%;}
+.aboutcard a{margin:0; text-decoration: underline;}
 
 @media (max-width: 768px) {
     .intro, .whatioffer, .whatpeoplesay {
