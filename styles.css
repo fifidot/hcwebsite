@@ -1,0 +1,116 @@
+:root {
+    --shadow-color: #9aa9b0;
+    --card-bg: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.greyline {
+    background-color: var(--shadow-color);
+    height: 5px;
+    margin-bottom: 1rem;
+}
+
+.top {
+    background: url(images/banner.webp);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introcard, .aboutcard {
+    background-color: var(--card-bg);
+    filter: drop-shadow(4px 4px 4px var(--shadow-color));
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.introcard {
+    width: 40%;
+    /* height: 350px; */
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.whatioffer, .whatpeoplesay {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutText {
+    width: 60%;
+}
+
+.aboutPhoto {
+    width: 35%;
+}
+
+.aboutcard {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.saycard {
+    width: 23%;
+    font-size: 0.9em;
+    padding: 10px;
+    background-color: var(--card-bg);
+    filter: drop-shadow(4px 4px 4px var(--shadow-color));
+}
+
+.cn {
+
+    font-weight: bold;
+}
+
+.round {
+    width: 80%;
+    border-radius: 50%;
+}
+nav{width:100%;
+display: flex;
+justify-content: center;
+flex-direction: row;}
+
+footer {
+    background-color: var(--shadow-color);
+    height: 100px;
+}
+.title-highlight{    font-weight: 700;}
+.list-gap{margin-left: 5%;}
+
+@media (max-width: 768px) {
+    .intro, .whatioffer, .whatpeoplesay {
+        flex-direction: column;
+        align-items: center;
+    }
+.introcard, .aboutText, .aboutPhoto{
+    width:90%;
+}
+    .aboutcard, .saycard, .about {
+        width: 90%;
+    }
+
+    .aboutcard, .saycard {
+        margin-top: 10px;
+    }
+}

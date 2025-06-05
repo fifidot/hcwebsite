@@ -1,0 +1,141 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    /* A common, legible font */
+    line-height: 1.6;
+    /* Improved readability */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Box-sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+/* Container */
+main {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Base typography */
+body {
+    font-size: 16px;
+    /* Base font size */
+    color: #333;
+    /* Primary text color */
+    background-color: #fff;
+    /* Default background color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    /* Consistent heading weight */
+    margin-bottom: 1rem;
+}
+
+
+/* Responsive typography */
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.17rem;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    /* Spacing between paragraphs */
+}
+
+a {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ color: #333;
+    /* Link color */
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a:hover, a:focus {
+    color: #333;
+    /* Link hover color */
+    text-decoration: underline;
+}
+
+
+/* Responsive design */
+@media (min-width: 768px) {
+    main {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        max-width: 1140px;
+    }
+}
+
+.philosopher-regular {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.philosopher-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.philosopher-bold-small {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.philosopher-bold-large {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
